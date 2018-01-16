@@ -1,0 +1,6 @@
+framework module Pods_slack_clone {
+  umbrella header "Pods-slack-clone-umbrella.h"
+
+  export *
+  module * { export * }
+}
