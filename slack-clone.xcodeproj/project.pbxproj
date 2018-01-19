@@ -18,6 +18,8 @@
 		525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EDACB2005E57C00BC965C /* SWRevealViewController.m */; };
 		525EDAD2200645C700BC965C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD1200645C700BC965C /* ChatVC.swift */; };
 		525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD3200645DE00BC965C /* ChannelVC.swift */; };
+		5279A71A2011BF7000720958 /* profileModalPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279A7182011BF7000720958 /* profileModalPopUpVC.swift */; };
+		5279A71B2011BF7000720958 /* profileModalPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5279A7192011BF7000720958 /* profileModalPopUpVC.xib */; };
 		52818DDD200C777C003A109C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52818DDC200C777C003A109C /* RoundedButton.swift */; };
 		52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E993A1200F9C2D00D78305 /* CircleImage.swift */; };
 		52FDD6101FF6235C00D1AFF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDD60F1FF6235C00D1AFF5 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 		525EDACB2005E57C00BC965C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		525EDAD1200645C700BC965C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		525EDAD3200645DE00BC965C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		5279A7182011BF7000720958 /* profileModalPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileModalPopUpVC.swift; sourceTree = "<group>"; };
+		5279A7192011BF7000720958 /* profileModalPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = profileModalPopUpVC.xib; sourceTree = "<group>"; };
 		52818DDC200C777C003A109C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		52E993A1200F9C2D00D78305 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		52FDD60C1FF6235C00D1AFF5 /* slack-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "slack-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,7 @@
 				5226D418200864E500CBD37A /* LoginVC.swift */,
 				5226D41A20086CEF00CBD37A /* CreateAccountVC.swift */,
 				5243B336200CF71A00754CE8 /* AvatarPickerVC.swift */,
+				5279A7182011BF7000720958 /* profileModalPopUpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +137,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5279A71C2011BF8700720958 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				5279A7192011BF7000720958 /* profileModalPopUpVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		52FDD6031FF6235B00D1AFF5 = {
@@ -155,6 +168,7 @@
 		52FDD60E1FF6235C00D1AFF5 /* slack-clone */ = {
 			isa = PBXGroup;
 			children = (
+				5279A71C2011BF8700720958 /* XIBs */,
 				5239663B2009EB7E00460CF4 /* Services */,
 				5226D41520085DDA00CBD37A /* Utilities */,
 				525EDAD02006455A00BC965C /* Model */,
@@ -245,6 +259,7 @@
 				52FDD61A1FF6235C00D1AFF5 /* LaunchScreen.storyboard in Resources */,
 				52FDD6171FF6235C00D1AFF5 /* Assets.xcassets in Resources */,
 				52FDD6151FF6235C00D1AFF5 /* Main.storyboard in Resources */,
+				5279A71B2011BF7000720958 /* profileModalPopUpVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +345,7 @@
 				525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */,
 				5243B337200CF71A00754CE8 /* AvatarPickerVC.swift in Sources */,
 				52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */,
+				5279A71A2011BF7000720958 /* profileModalPopUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

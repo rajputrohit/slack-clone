@@ -21,7 +21,16 @@ class ChannelVC: UIViewController {
     }
     
     @IBAction func loginButtonDidPress(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: self)
+        
+        if AuthService.instance.isLoggedIn {
+            // Show profile Modal Pop Up
+            let profile = profileModalPopUpVC()
+            profile.modalPresentationStyle = .custom
+            profile.modalTransitionStyle = .crossDissolve
+            present(profile, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: TO_LOGIN, sender: self)
+        }
     }
     
     @IBAction func unwindFromCreateAccountVC(segue: UIStoryboardSegue){
@@ -29,7 +38,7 @@ class ChannelVC: UIViewController {
     }
     
     @objc func userDataDidChange(_ notify: Notification) {
-        if (AuthService.instance.isLoggedIn) == true {
+        if AuthService.instance.isLoggedIn {
             loginButton.setTitle(UserDataService.instance.name, for: .normal)
             userImage.image = UIImage(named:(UserDataService.instance.avatarName))
             userImage.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
