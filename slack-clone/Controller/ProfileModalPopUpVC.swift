@@ -1,5 +1,5 @@
 //
-//  profileModalPopUpVC.swift
+//  ProfileModalPopupVC.swift
 //  slack-clone
 //
 //  Created by Rohit Rajput on 19/01/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class profileModalPopUpVC: UIViewController {
+class ProfileModalPopupVC: UIViewController {
 
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!

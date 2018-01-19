@@ -18,10 +18,12 @@
 		525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EDACB2005E57C00BC965C /* SWRevealViewController.m */; };
 		525EDAD2200645C700BC965C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD1200645C700BC965C /* ChatVC.swift */; };
 		525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD3200645DE00BC965C /* ChannelVC.swift */; };
-		5279A71A2011BF7000720958 /* profileModalPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279A7182011BF7000720958 /* profileModalPopUpVC.swift */; };
-		5279A71B2011BF7000720958 /* profileModalPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5279A7192011BF7000720958 /* profileModalPopUpVC.xib */; };
+		5279A71A2011BF7000720958 /* ProfileModalPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */; };
+		5279A71B2011BF7000720958 /* ProfileModalPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */; };
 		52818DDD200C777C003A109C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52818DDC200C777C003A109C /* RoundedButton.swift */; };
 		52B1D93D20124A210094D5B7 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1D93C20124A210094D5B7 /* ChannelCell.swift */; };
+		52B1D9402012525C0094D5B7 /* CreateChannelPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1D93E2012525C0094D5B7 /* CreateChannelPopupVC.swift */; };
+		52B1D9412012525C0094D5B7 /* CreateChannelPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B1D93F2012525C0094D5B7 /* CreateChannelPopupVC.xib */; };
 		52E7B0FB2012108E00C72EDC /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7B0FA2012108E00C72EDC /* MessageService.swift */; };
 		52E7B0FD201210D700C72EDC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E7B0FC201210D700C72EDC /* Channel.swift */; };
 		52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E993A1200F9C2D00D78305 /* CircleImage.swift */; };
@@ -48,10 +50,12 @@
 		525EDACB2005E57C00BC965C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		525EDAD1200645C700BC965C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		525EDAD3200645DE00BC965C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
-		5279A7182011BF7000720958 /* profileModalPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileModalPopUpVC.swift; sourceTree = "<group>"; };
-		5279A7192011BF7000720958 /* profileModalPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = profileModalPopUpVC.xib; sourceTree = "<group>"; };
+		5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalPopUpVC.swift; sourceTree = "<group>"; };
+		5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileModalPopupVC.xib; sourceTree = "<group>"; };
 		52818DDC200C777C003A109C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		52B1D93C20124A210094D5B7 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		52B1D93E2012525C0094D5B7 /* CreateChannelPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChannelPopupVC.swift; sourceTree = "<group>"; };
+		52B1D93F2012525C0094D5B7 /* CreateChannelPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateChannelPopupVC.xib; sourceTree = "<group>"; };
 		52E7B0FA2012108E00C72EDC /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		52E7B0FC201210D700C72EDC /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		52E993A1200F9C2D00D78305 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -123,7 +127,8 @@
 				5226D418200864E500CBD37A /* LoginVC.swift */,
 				5226D41A20086CEF00CBD37A /* CreateAccountVC.swift */,
 				5243B336200CF71A00754CE8 /* AvatarPickerVC.swift */,
-				5279A7182011BF7000720958 /* profileModalPopUpVC.swift */,
+				5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */,
+				52B1D93E2012525C0094D5B7 /* CreateChannelPopupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,7 +156,8 @@
 		5279A71C2011BF8700720958 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				5279A7192011BF7000720958 /* profileModalPopUpVC.xib */,
+				5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */,
+				52B1D93F2012525C0094D5B7 /* CreateChannelPopupVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -268,7 +274,8 @@
 				52FDD61A1FF6235C00D1AFF5 /* LaunchScreen.storyboard in Resources */,
 				52FDD6171FF6235C00D1AFF5 /* Assets.xcassets in Resources */,
 				52FDD6151FF6235C00D1AFF5 /* Main.storyboard in Resources */,
-				5279A71B2011BF7000720958 /* profileModalPopUpVC.xib in Resources */,
+				5279A71B2011BF7000720958 /* ProfileModalPopupVC.xib in Resources */,
+				52B1D9412012525C0094D5B7 /* CreateChannelPopupVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +349,7 @@
 				525EDAD2200645C700BC965C /* ChatVC.swift in Sources */,
 				52FDD6121FF6235C00D1AFF5 /* ViewController.swift in Sources */,
 				5243B339200CF9DB00754CE8 /* AvatarCell.swift in Sources */,
+				52B1D9402012525C0094D5B7 /* CreateChannelPopupVC.swift in Sources */,
 				5226D419200864E500CBD37A /* LoginVC.swift in Sources */,
 				5226D4122007C00200CBD37A /* GradientView.swift in Sources */,
 				52FDD6101FF6235C00D1AFF5 /* AppDelegate.swift in Sources */,
@@ -357,7 +365,7 @@
 				525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */,
 				5243B337200CF71A00754CE8 /* AvatarPickerVC.swift in Sources */,
 				52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */,
-				5279A71A2011BF7000720958 /* profileModalPopUpVC.swift in Sources */,
+				5279A71A2011BF7000720958 /* ProfileModalPopUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

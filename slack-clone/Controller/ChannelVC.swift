@@ -60,10 +60,9 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBAction func loginButtonDidPress(_ sender: Any) {
-        
         if AuthService.instance.isLoggedIn {
             // Show profile Modal Pop Up
-            let profile = profileModalPopUpVC()
+            let profile = ProfileModalPopupVC()
             profile.modalPresentationStyle = .custom
             profile.modalTransitionStyle = .crossDissolve
             present(profile, animated: true, completion: nil)
@@ -94,5 +93,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             userImage.backgroundColor = UIColor.clear
         }
     }
+    
+    @IBAction func addChannelButtonDidPress(_ sender: Any) {
+        let addChannel = CreateChannelPopupVC()
+        addChannel.modalPresentationStyle = .custom
+        addChannel.modalTransitionStyle = .crossDissolve
+        present(addChannel, animated: true, completion: nil)
+    }
+    
     
 }

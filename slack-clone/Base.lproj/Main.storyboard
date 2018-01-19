@@ -125,6 +125,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-v8-NTL">
                                 <rect key="frame" x="273" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelButtonDidPress:" destination="C9H-zZ-rUb" eventType="touchUpInside" id="GHc-3p-dMp"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="hva-GV-LOy" customClass="CircleImage" customModule="slack_clone" customModuleProvider="target">
                                 <rect key="frame" x="20" y="572" width="75" height="75"/>
