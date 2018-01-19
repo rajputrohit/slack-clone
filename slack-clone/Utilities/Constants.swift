@@ -35,6 +35,9 @@ let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
+// Table Cells
+let CHANNEL_CELL = "channelCell"
+
 // Headers
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
