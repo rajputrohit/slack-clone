@@ -19,16 +19,22 @@ class CreateAccountVC: UIViewController {
     // Variables
     var avatarName: String = "profileDefault"
     var avatarColor: String = "[0.5, 0.5, 0.5, 1]"
+    var bgColor: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         if UserDataService.instance.avatarName != "" {
             userImage.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
+            if avatarName.contains("light") && bgColor == nil {
+                    userImage.backgroundColor = UIColor.lightGray
+            }
         }
     }
     
@@ -70,10 +76,43 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func pickBackgroundColorDidPress(_ sender: Any) {
+        let r = CGFloat(arc4random_uniform(255)) / 255
+        let g = CGFloat(arc4random_uniform(255)) / 255
+        let b = CGFloat(arc4random_uniform(255)) / 255
+        
+        bgColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.userImage.backgroundColor = self.bgColor
+        }
    
     }
     
     @IBAction func closeButtonDidPress(_ sender: Any) {
         performSegue(withIdentifier: TO_CHANNEL_VC, sender: nil)
     }
+    
+    func setupView() {
+        usernameTextField.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+    
+    emailTextField.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+    passwordTextField.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

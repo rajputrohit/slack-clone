@@ -19,6 +19,7 @@
 		525EDAD2200645C700BC965C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD1200645C700BC965C /* ChatVC.swift */; };
 		525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD3200645DE00BC965C /* ChannelVC.swift */; };
 		52818DDD200C777C003A109C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52818DDC200C777C003A109C /* RoundedButton.swift */; };
+		52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E993A1200F9C2D00D78305 /* CircleImage.swift */; };
 		52FDD6101FF6235C00D1AFF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDD60F1FF6235C00D1AFF5 /* AppDelegate.swift */; };
 		52FDD6121FF6235C00D1AFF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDD6111FF6235C00D1AFF5 /* ViewController.swift */; };
 		52FDD6151FF6235C00D1AFF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FDD6131FF6235C00D1AFF5 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		525EDAD1200645C700BC965C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		525EDAD3200645DE00BC965C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		52818DDC200C777C003A109C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		52E993A1200F9C2D00D78305 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		52FDD60C1FF6235C00D1AFF5 /* slack-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "slack-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDD60F1FF6235C00D1AFF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FDD6111FF6235C00D1AFF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				5226D4112007C00200CBD37A /* GradientView.swift */,
 				52818DDC200C777C003A109C /* RoundedButton.swift */,
 				5243B338200CF9DB00754CE8 /* AvatarCell.swift */,
+				52E993A1200F9C2D00D78305 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */,
 				525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */,
 				5243B337200CF71A00754CE8 /* AvatarPickerVC.swift in Sources */,
+				52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
