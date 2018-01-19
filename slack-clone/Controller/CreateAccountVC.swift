@@ -15,6 +15,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     // Variables
     var avatarName: String = "profileDefault"
@@ -40,6 +41,9 @@ class CreateAccountVC: UIViewController {
     
     
     @IBAction func createAccountDidPress(_ sender: Any) {
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard  let userName = usernameTextField.text, usernameTextField.text != "" else {
             return
         }
@@ -60,7 +64,11 @@ class CreateAccountVC: UIViewController {
                             if success {
                                 print(UserDataService.instance.name,
                                       UserDataService.instance.avatarName)
+                                self.spinner.isHidden = true
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: TO_CHANNEL_VC , sender: nil)
+                                
+                                NotificationCenter.default.post(name: NOTIFY_USER_DATA_DID_CHANGE, object: nil)
                             }
                         })
                     }
@@ -93,10 +101,21 @@ class CreateAccountVC: UIViewController {
     }
     
     func setupView() {
+        
         usernameTextField.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+        
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+        
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
+        
+        spinner.isHidden = true
+    }
     
-    emailTextField.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
-    passwordTextField.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: slackPurplePlaceholder])
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
 }

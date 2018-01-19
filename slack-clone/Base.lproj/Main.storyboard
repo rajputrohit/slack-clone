@@ -455,6 +455,14 @@
                                     <action selector="pickBackgroundColorDidPress:" destination="MWO-jy-Me2" eventType="touchUpInside" id="GcA-ez-vQ1"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IGb-S0-HHG">
+                                <rect key="frame" x="169" y="275" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="TDW-Be-uY6"/>
+                                    <constraint firstAttribute="width" constant="37" id="mAO-Bt-klz"/>
+                                </constraints>
+                                <color key="color" red="0.40000000000000002" green="0.4823529412" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -465,6 +473,7 @@
                             <constraint firstItem="ndQ-Qh-jIs" firstAttribute="top" secondItem="JPK-4U-Naj" secondAttribute="top" id="Yqf-5j-DbM"/>
                             <constraint firstItem="qPf-Ew-aTI" firstAttribute="top" secondItem="ndQ-Qh-jIs" secondAttribute="bottom" constant="10" id="cu3-jD-hLg"/>
                             <constraint firstItem="GVb-z2-ouE" firstAttribute="top" secondItem="Y26-Zt-uVH" secondAttribute="top" constant="60" id="da7-hK-Vps"/>
+                            <constraint firstItem="IGb-S0-HHG" firstAttribute="top" secondItem="TpJ-Fa-FfM" secondAttribute="bottom" constant="1" id="gYS-s3-Fli"/>
                             <constraint firstItem="Y26-Zt-uVH" firstAttribute="trailing" secondItem="7Dw-9g-RZ4" secondAttribute="trailing" constant="20" id="hDD-c1-DiX"/>
                             <constraint firstItem="ndQ-Qh-jIs" firstAttribute="width" secondItem="JPK-4U-Naj" secondAttribute="width" id="hKT-2G-MQP"/>
                             <constraint firstItem="JPK-4U-Naj" firstAttribute="top" secondItem="TpJ-Fa-FfM" secondAttribute="bottom" constant="40" id="jix-9a-8Re"/>
@@ -472,6 +481,7 @@
                             <constraint firstItem="7Dw-9g-RZ4" firstAttribute="top" secondItem="Y26-Zt-uVH" secondAttribute="top" id="omJ-Hc-aWJ"/>
                             <constraint firstItem="TpJ-Fa-FfM" firstAttribute="centerX" secondItem="lcf-PT-6fn" secondAttribute="centerX" id="rUJ-HU-x6z"/>
                             <constraint firstItem="GVb-z2-ouE" firstAttribute="centerX" secondItem="lcf-PT-6fn" secondAttribute="centerX" id="sdF-Y5-xja"/>
+                            <constraint firstItem="IGb-S0-HHG" firstAttribute="centerX" secondItem="lcf-PT-6fn" secondAttribute="centerX" id="wuw-ZF-jAL"/>
                             <constraint firstItem="ndQ-Qh-jIs" firstAttribute="centerX" secondItem="lcf-PT-6fn" secondAttribute="centerX" id="yPe-ik-mXA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y26-Zt-uVH"/>
@@ -479,6 +489,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="9UK-Br-Cx9" id="g4I-HW-0UH"/>
                         <outlet property="passwordTextField" destination="Fxc-dM-Zhn" id="T7P-aI-bLj"/>
+                        <outlet property="spinner" destination="IGb-S0-HHG" id="XBh-4G-W7D"/>
                         <outlet property="userImage" destination="JPK-4U-Naj" id="4eH-yI-ukI"/>
                         <outlet property="usernameTextField" destination="Xgo-oI-m6Q" id="hWI-5A-CvL"/>
                         <segue destination="05m-gA-WYs" kind="unwind" identifier="toChannelVC" unwindAction="unwindFromCreateAccountVCWithSegue:" id="2T3-oK-Ix9"/>
