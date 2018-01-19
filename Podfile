@@ -10,5 +10,4 @@ target 'slack-clone' do
 	pod 'Alamofire', '~> 4.5'
 	pod 'Socket.IO-Client-Swift', '~> 13.1.0'
 	pod 'SwiftyJSON', '~> 4.0'
-
 end
