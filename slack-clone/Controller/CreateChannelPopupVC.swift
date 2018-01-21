@@ -25,6 +25,15 @@ class CreateChannelPopupVC: UIViewController {
     }
     
     @IBAction func createChannelButtonDidPress(_ sender: Any) {
+        
+        guard let channelName = usernameTextField.text, usernameTextField.text != nil else { return }
+        guard let channelDescription = descriptionTextField.text else { return }
+        
+        SocketService.instance.addChannel(channelName: channelName, channelDescription: channelDescription) { (success) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
     func setupView() {

@@ -8,6 +8,6 @@ target 'slack-clone' do
   # Pods for slack-clone
 
 	pod 'Alamofire', '~> 4.5'
-	pod 'Socket.IO-Client-Swift', '~> 13.1.0'
+	pod 'Socket.IO-Client-Swift', '~> 12.1.3'
 	pod 'SwiftyJSON', '~> 4.0'
 end

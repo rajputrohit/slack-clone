@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521D000120138DFB006CD521 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D000020138DFB006CD521 /* SocketService.swift */; };
 		5226D4122007C00200CBD37A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D4112007C00200CBD37A /* GradientView.swift */; };
 		5226D41720085DE800CBD37A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D41620085DE800CBD37A /* Constants.swift */; };
 		5226D419200864E500CBD37A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D418200864E500CBD37A /* LoginVC.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0DC0E0EE3BC981BFC798B0E3 /* Pods-slack-clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slack-clone.release.xcconfig"; path = "Pods/Target Support Files/Pods-slack-clone/Pods-slack-clone.release.xcconfig"; sourceTree = "<group>"; };
+		521D000020138DFB006CD521 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		5226D4112007C00200CBD37A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5226D41620085DE800CBD37A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5226D418200864E500CBD37A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				5239663C2009EB9400460CF4 /* AuthService.swift */,
 				5243B334200CE94D00754CE8 /* UserDataService.swift */,
 				52E7B0FA2012108E00C72EDC /* MessageService.swift */,
+				521D000020138DFB006CD521 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				52B1D93D20124A210094D5B7 /* ChannelCell.swift in Sources */,
 				52818DDD200C777C003A109C /* RoundedButton.swift in Sources */,
 				5226D41720085DE800CBD37A /* Constants.swift in Sources */,
+				521D000120138DFB006CD521 /* SocketService.swift in Sources */,
 				5239663D2009EB9400460CF4 /* AuthService.swift in Sources */,
 				525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */,
 				525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */,
