@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Channel: Decodable {
+struct Channel {
     
     public private(set) var title: String!
     public private(set) var channelDescription: String!

@@ -23,6 +23,10 @@ let slackPurplePlaceholder = #colorLiteral(red: 0.3568627451, green: 0.623529411
 
 // Notification
 let NOTIFY_USER_DATA_DID_CHANGE = Notification.Name(rawValue: "notifyUserDataDidChange")
+let NOTIFY_CHANNELS_DID_LOAD = Notification.Name(rawValue: "channelsLoaded")
+let NOTIFY_CHANNEL_SELECTED = Notification.Name(rawValue: "channelSelected")
+
+
 
 // Segues
 let TO_LOGIN = "toLogin"
