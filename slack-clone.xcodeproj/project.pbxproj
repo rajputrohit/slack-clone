@@ -19,6 +19,7 @@
 		525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EDACB2005E57C00BC965C /* SWRevealViewController.m */; };
 		525EDAD2200645C700BC965C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD1200645C700BC965C /* ChatVC.swift */; };
 		525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD3200645DE00BC965C /* ChannelVC.swift */; };
+		5273BA99201499C200621EA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273BA98201499C200621EA5 /* Message.swift */; };
 		5279A71A2011BF7000720958 /* ProfileModalPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */; };
 		5279A71B2011BF7000720958 /* ProfileModalPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */; };
 		52818DDD200C777C003A109C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52818DDC200C777C003A109C /* RoundedButton.swift */; };
@@ -52,6 +53,7 @@
 		525EDACB2005E57C00BC965C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		525EDAD1200645C700BC965C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		525EDAD3200645DE00BC965C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		5273BA98201499C200621EA5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalPopUpVC.swift; sourceTree = "<group>"; };
 		5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileModalPopupVC.xib; sourceTree = "<group>"; };
 		52818DDC200C777C003A109C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				52E7B0FC201210D700C72EDC /* Channel.swift */,
+				5273BA98201499C200621EA5 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				521D000120138DFB006CD521 /* SocketService.swift in Sources */,
 				5239663D2009EB9400460CF4 /* AuthService.swift in Sources */,
 				525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */,
+				5273BA99201499C200621EA5 /* Message.swift in Sources */,
 				525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */,
 				5243B337200CF71A00754CE8 /* AvatarPickerVC.swift in Sources */,
 				52E993A2200F9C2D00D78305 /* CircleImage.swift in Sources */,
