@@ -156,17 +156,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-jJ-Gol">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BCJ-lS-OOT" firstAttribute="centerY" secondItem="va0-5O-f2d" secondAttribute="centerY" id="7fW-9z-d07"/>
                             <constraint firstItem="NFJ-jO-eMU" firstAttribute="trailing" secondItem="LOf-7l-FZi" secondAttribute="trailing" id="ElT-Gp-P9w"/>
+                            <constraint firstItem="va0-5O-f2d" firstAttribute="top" secondItem="qXe-jJ-Gol" secondAttribute="bottom" constant="6" id="GSq-G9-3xh"/>
                             <constraint firstItem="NFJ-jO-eMU" firstAttribute="leading" secondItem="LOf-7l-FZi" secondAttribute="leading" id="KG1-kC-ATG"/>
                             <constraint firstItem="va0-5O-f2d" firstAttribute="top" secondItem="gmD-Ui-O5X" secondAttribute="bottom" constant="30" id="Ks1-b3-q5E"/>
                             <constraint firstItem="NFJ-jO-eMU" firstAttribute="top" secondItem="fAD-Ey-LRq" secondAttribute="top" id="Kzc-ml-KcG"/>
                             <constraint firstItem="va0-5O-f2d" firstAttribute="bottom" secondItem="LOf-7l-FZi" secondAttribute="bottom" id="UdZ-0O-eR1"/>
                             <constraint firstItem="va0-5O-f2d" firstAttribute="leading" secondItem="LOf-7l-FZi" secondAttribute="leading" id="Yg3-cv-cFJ"/>
                             <constraint firstItem="gmD-Ui-O5X" firstAttribute="top" secondItem="NFJ-jO-eMU" secondAttribute="bottom" id="arI-XP-2Ar"/>
+                            <constraint firstItem="qXe-jJ-Gol" firstAttribute="leading" secondItem="LOf-7l-FZi" secondAttribute="leading" constant="8" id="e8l-tT-vhE"/>
                             <constraint firstItem="LOf-7l-FZi" firstAttribute="trailing" secondItem="BCJ-lS-OOT" secondAttribute="trailing" constant="8" id="iLx-1u-eHV"/>
                             <constraint firstItem="gmD-Ui-O5X" firstAttribute="trailing" secondItem="LOf-7l-FZi" secondAttribute="trailing" id="lIa-R2-2h9"/>
                             <constraint firstItem="va0-5O-f2d" firstAttribute="trailing" secondItem="LOf-7l-FZi" secondAttribute="trailing" id="mLc-zD-PBJ"/>
@@ -180,6 +188,7 @@
                         <outlet property="menuButton" destination="RRh-vc-uE7" id="cUt-08-jJQ"/>
                         <outlet property="sendButton" destination="BCJ-lS-OOT" id="YbA-BB-hji"/>
                         <outlet property="tableView" destination="gmD-Ui-O5X" id="chH-SZ-yXJ"/>
+                        <outlet property="typingUsersLabel" destination="qXe-jJ-Gol" id="Yyu-8w-eE0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiG-uP-nHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
