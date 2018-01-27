@@ -72,14 +72,14 @@ class MessageService {
                             let userAvatarColor = item["userAvatarColor"].stringValue
                             let timeStamp = item["timeStamp"].stringValue
                             
-                            let message = Message(message: messageBody, usename: username, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
+                            let message = Message(message: messageBody, username: username, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
                             self.messages.append(message)
                         }
                         completion(true)
                         print("Messages retrieving: \(self.messages)")
                     }
                 }   catch {
-                    
+                    debugPrint(response.result.error)
                 }
             } else {
             debugPrint(response.result.error as Any)

@@ -42,6 +42,7 @@ let USER_EMAIL = "userEmail"
 
 // Table Cells
 let CHANNEL_CELL = "channelCell"
+let MESSAGE_CELL = "messageCell"
 
 // Headers
 let HEADER = [

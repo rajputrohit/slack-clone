@@ -20,6 +20,7 @@
 		525EDAD2200645C700BC965C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD1200645C700BC965C /* ChatVC.swift */; };
 		525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EDAD3200645DE00BC965C /* ChannelVC.swift */; };
 		52655996201CCDB1006E9B96 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52655995201CCDB1006E9B96 /* KeyboardBoundView.swift */; };
+		52655998201CD598006E9B96 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52655997201CD598006E9B96 /* MessageCell.swift */; };
 		5273BA99201499C200621EA5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5273BA98201499C200621EA5 /* Message.swift */; };
 		5279A71A2011BF7000720958 /* ProfileModalPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */; };
 		5279A71B2011BF7000720958 /* ProfileModalPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */; };
@@ -55,6 +56,7 @@
 		525EDAD1200645C700BC965C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		525EDAD3200645DE00BC965C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		52655995201CCDB1006E9B96 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		52655997201CD598006E9B96 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		5273BA98201499C200621EA5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5279A7182011BF7000720958 /* ProfileModalPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalPopUpVC.swift; sourceTree = "<group>"; };
 		5279A7192011BF7000720958 /* ProfileModalPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileModalPopupVC.xib; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				52E993A1200F9C2D00D78305 /* CircleImage.swift */,
 				52B1D93C20124A210094D5B7 /* ChannelCell.swift */,
 				52655995201CCDB1006E9B96 /* KeyboardBoundView.swift */,
+				52655997201CD598006E9B96 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				5226D41720085DE800CBD37A /* Constants.swift in Sources */,
 				521D000120138DFB006CD521 /* SocketService.swift in Sources */,
 				5239663D2009EB9400460CF4 /* AuthService.swift in Sources */,
+				52655998201CD598006E9B96 /* MessageCell.swift in Sources */,
 				525EDACC2005E57C00BC965C /* SWRevealViewController.m in Sources */,
 				5273BA99201499C200621EA5 /* Message.swift in Sources */,
 				525EDAD4200645DE00BC965C /* ChannelVC.swift in Sources */,
