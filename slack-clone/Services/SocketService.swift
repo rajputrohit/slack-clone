@@ -10,7 +10,7 @@ import UIKit
 import SocketIO
 
 class SocketService: NSObject {
-
+    
     static var instance = SocketService()
     
     override init() {
@@ -18,7 +18,7 @@ class SocketService: NSObject {
     }
     
     var socket: SocketIOClient = SocketIOClient(socketURL: URL(string: BASE_URL)!)
-
+    
     func establishConnection() {
         socket.connect()
     }
@@ -51,6 +51,31 @@ class SocketService: NSObject {
         completion(true)
         print(messageBody)
     }
+    
+    func getChatMessages(completion: @escaping CompletionHandler) {
+        socket.on("messageCreated") { (dataArray, ack) in
+            guard let messageBody = dataArray[0] as? String else { return }
+            guard let channelID = dataArray[2] as? String else { return }
+            guard let username = dataArray[3] as? String else { return }
+            guard let userAvatar = dataArray[4] as? String else { return }
+            guard let userAvatarColor = dataArray[5] as? String else { return }
+            guard let messsageID = dataArray[6] as? String else { return }
+            guard let timeStamp = dataArray[7] as? String else { return }
+            
+            if channelID == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
+                let newMessage = Message(message: messageBody, username: username, channelId: channelID, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: messsageID, timeStamp: timeStamp)
+                MessageService.instance.messages.append(newMessage)
+                completion(true)
+            } else {
+                completion(false)
+            }
+            
+        }
+        
+        
+    }
+    
+    
     
 }
 
