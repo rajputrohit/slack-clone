@@ -77,23 +77,45 @@
                                     <constraint firstItem="nro-2W-e3I" firstAttribute="centerY" secondItem="RRh-vc-uE7" secondAttribute="centerY" id="wrf-ss-RAi"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message: " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="va0-5O-f2d">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xDd-sR-Tlj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-lS-OOT">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMessageDidPress:" destination="IdX-zM-OtH" eventType="touchUpInside" id="s39-xi-cRB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BCJ-lS-OOT" firstAttribute="centerY" secondItem="va0-5O-f2d" secondAttribute="centerY" id="7fW-9z-d07"/>
                             <constraint firstItem="NFJ-jO-eMU" firstAttribute="trailing" secondItem="LOf-7l-FZi" secondAttribute="trailing" id="ElT-Gp-P9w"/>
                             <constraint firstItem="NFJ-jO-eMU" firstAttribute="leading" secondItem="LOf-7l-FZi" secondAttribute="leading" id="KG1-kC-ATG"/>
                             <constraint firstItem="NFJ-jO-eMU" firstAttribute="top" secondItem="fAD-Ey-LRq" secondAttribute="top" id="Kzc-ml-KcG"/>
+                            <constraint firstItem="va0-5O-f2d" firstAttribute="bottom" secondItem="LOf-7l-FZi" secondAttribute="bottom" id="UdZ-0O-eR1"/>
+                            <constraint firstItem="va0-5O-f2d" firstAttribute="leading" secondItem="LOf-7l-FZi" secondAttribute="leading" id="Yg3-cv-cFJ"/>
+                            <constraint firstItem="LOf-7l-FZi" firstAttribute="trailing" secondItem="BCJ-lS-OOT" secondAttribute="trailing" constant="8" id="iLx-1u-eHV"/>
+                            <constraint firstItem="va0-5O-f2d" firstAttribute="trailing" secondItem="LOf-7l-FZi" secondAttribute="trailing" id="mLc-zD-PBJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LOf-7l-FZi"/>
                     </view>
                     <connections>
                         <outlet property="channelNameLabel" destination="nro-2W-e3I" id="7bv-Y3-trL"/>
+                        <outlet property="inputMessageTextField" destination="va0-5O-f2d" id="61A-ZI-uob"/>
                         <outlet property="menuButton" destination="RRh-vc-uE7" id="cUt-08-jJQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiG-uP-nHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="506"/>
+            <point key="canvasLocation" x="880.79999999999995" y="505.99700149925042"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="R9I-sD-N1e">
@@ -624,6 +646,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="dark0" width="100" height="100"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
